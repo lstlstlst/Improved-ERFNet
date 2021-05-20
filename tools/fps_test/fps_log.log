@@ -1,0 +1,25 @@
+python fps.py 
+
+Model Name: ERFNet
+Elapsed Time: [20.06 s / 1000 iter]
+Speed Time: 20.06 ms / iter  FPS: 49.838283
+Model Name: ERF_PSPNet
+Elapsed Time: [15.82 s / 1000 iter]
+Speed Time: 15.82 ms / iter  FPS: 63.205236
+=======================================
+Model Name: ERF_SEPSPNet
+Elapsed Time: [16.07 s / 1000 iter]
+Speed Time: 16.07 ms / iter  FPS: 62.223021
+=======================================
+Model Name: ERF_PSPSENet
+Elapsed Time: [16.00 s / 1000 iter]
+Speed Time: 16.00 ms / iter  FPS: 62.509396
+=======================================
+Model Name: ERF_SEPSP_contactNet
+Elapsed Time: [16.13 s / 1000 iter]
+Speed Time: 16.13 ms / iter  FPS: 61.986926
+=======================================
+Model Name: ERF_PSPSE_contactNet
+Elapsed Time: [16.15 s / 1000 iter]
+Speed Time: 16.15 ms / iter  FPS: 61.934721
+

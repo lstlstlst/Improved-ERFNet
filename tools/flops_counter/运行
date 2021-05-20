@@ -1,0 +1,2 @@
+python flops.py --model ERF_SEPSP_contactNet 2>&1 | tee erfnet_sepspnet_contactSE_flops.log
+

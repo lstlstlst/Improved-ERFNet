@@ -1,0 +1,274 @@
+ERF_PSPSE_contactNet(
+  26.569 GMac, 100.000% MACs, 
+  (encoder): Encoder(
+    21.684 GMac, 81.611% MACs, 
+    (initial_block): DownsamplerBlock(
+      0.053 GMac, 0.201% MACs, 
+      (conv): Conv2d(0.048 GMac, 0.180% MACs, 3, 13, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+      (pool): MaxPool2d(0.002 GMac, 0.006% MACs, kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+      (bn): BatchNorm2d(0.004 GMac, 0.016% MACs, 16, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (layers): ModuleList(
+      21.63 GMac, 81.410% MACs, 
+      (0): DownsamplerBlock(
+        0.234 GMac, 0.882% MACs, 
+        (conv): Conv2d(0.228 GMac, 0.858% MACs, 16, 48, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+        (pool): MaxPool2d(0.002 GMac, 0.008% MACs, kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+        (bn): BatchNorm2d(0.004 GMac, 0.016% MACs, 64, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+      )
+      (1): non_bottleneck_1d(
+        1.627 GMac, 6.125% MACs, 
+        (conv3x1_1): Conv2d(0.405 GMac, 1.523% MACs, 64, 64, kernel_size=(3, 1), stride=(1, 1), padding=(1, 0))
+        (conv1x3_1): Conv2d(0.405 GMac, 1.523% MACs, 64, 64, kernel_size=(1, 3), stride=(1, 1), padding=(0, 1))
+        (bn1): BatchNorm2d(0.004 GMac, 0.016% MACs, 64, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3x1_2): Conv2d(0.405 GMac, 1.523% MACs, 64, 64, kernel_size=(3, 1), stride=(1, 1), padding=(1, 0))
+        (conv1x3_2): Conv2d(0.405 GMac, 1.523% MACs, 64, 64, kernel_size=(1, 3), stride=(1, 1), padding=(0, 1))
+        (bn2): BatchNorm2d(0.004 GMac, 0.016% MACs, 64, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        (dropout): Dropout2d(0.0 GMac, 0.000% MACs, p=0.03)
+      )
+      (2): non_bottleneck_1d(
+        1.627 GMac, 6.125% MACs, 
+        (conv3x1_1): Conv2d(0.405 GMac, 1.523% MACs, 64, 64, kernel_size=(3, 1), stride=(1, 1), padding=(1, 0))
+        (conv1x3_1): Conv2d(0.405 GMac, 1.523% MACs, 64, 64, kernel_size=(1, 3), stride=(1, 1), padding=(0, 1))
+        (bn1): BatchNorm2d(0.004 GMac, 0.016% MACs, 64, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3x1_2): Conv2d(0.405 GMac, 1.523% MACs, 64, 64, kernel_size=(3, 1), stride=(1, 1), padding=(1, 0))
+        (conv1x3_2): Conv2d(0.405 GMac, 1.523% MACs, 64, 64, kernel_size=(1, 3), stride=(1, 1), padding=(0, 1))
+        (bn2): BatchNorm2d(0.004 GMac, 0.016% MACs, 64, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        (dropout): Dropout2d(0.0 GMac, 0.000% MACs, p=0.03)
+      )
+      (3): non_bottleneck_1d(
+        1.627 GMac, 6.125% MACs, 
+        (conv3x1_1): Conv2d(0.405 GMac, 1.523% MACs, 64, 64, kernel_size=(3, 1), stride=(1, 1), padding=(1, 0))
+        (conv1x3_1): Conv2d(0.405 GMac, 1.523% MACs, 64, 64, kernel_size=(1, 3), stride=(1, 1), padding=(0, 1))
+        (bn1): BatchNorm2d(0.004 GMac, 0.016% MACs, 64, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3x1_2): Conv2d(0.405 GMac, 1.523% MACs, 64, 64, kernel_size=(3, 1), stride=(1, 1), padding=(1, 0))
+        (conv1x3_2): Conv2d(0.405 GMac, 1.523% MACs, 64, 64, kernel_size=(1, 3), stride=(1, 1), padding=(0, 1))
+        (bn2): BatchNorm2d(0.004 GMac, 0.016% MACs, 64, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        (dropout): Dropout2d(0.0 GMac, 0.000% MACs, p=0.03)
+      )
+      (4): non_bottleneck_1d(
+        1.627 GMac, 6.125% MACs, 
+        (conv3x1_1): Conv2d(0.405 GMac, 1.523% MACs, 64, 64, kernel_size=(3, 1), stride=(1, 1), padding=(1, 0))
+        (conv1x3_1): Conv2d(0.405 GMac, 1.523% MACs, 64, 64, kernel_size=(1, 3), stride=(1, 1), padding=(0, 1))
+        (bn1): BatchNorm2d(0.004 GMac, 0.016% MACs, 64, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3x1_2): Conv2d(0.405 GMac, 1.523% MACs, 64, 64, kernel_size=(3, 1), stride=(1, 1), padding=(1, 0))
+        (conv1x3_2): Conv2d(0.405 GMac, 1.523% MACs, 64, 64, kernel_size=(1, 3), stride=(1, 1), padding=(0, 1))
+        (bn2): BatchNorm2d(0.004 GMac, 0.016% MACs, 64, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        (dropout): Dropout2d(0.0 GMac, 0.000% MACs, p=0.03)
+      )
+      (5): non_bottleneck_1d(
+        1.627 GMac, 6.125% MACs, 
+        (conv3x1_1): Conv2d(0.405 GMac, 1.523% MACs, 64, 64, kernel_size=(3, 1), stride=(1, 1), padding=(1, 0))
+        (conv1x3_1): Conv2d(0.405 GMac, 1.523% MACs, 64, 64, kernel_size=(1, 3), stride=(1, 1), padding=(0, 1))
+        (bn1): BatchNorm2d(0.004 GMac, 0.016% MACs, 64, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3x1_2): Conv2d(0.405 GMac, 1.523% MACs, 64, 64, kernel_size=(3, 1), stride=(1, 1), padding=(1, 0))
+        (conv1x3_2): Conv2d(0.405 GMac, 1.523% MACs, 64, 64, kernel_size=(1, 3), stride=(1, 1), padding=(0, 1))
+        (bn2): BatchNorm2d(0.004 GMac, 0.016% MACs, 64, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        (dropout): Dropout2d(0.0 GMac, 0.000% MACs, p=0.03)
+      )
+      (6): DownsamplerBlock(
+        0.307 GMac, 1.154% MACs, 
+        (conv): Conv2d(0.303 GMac, 1.139% MACs, 64, 64, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+        (pool): MaxPool2d(0.002 GMac, 0.008% MACs, kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+        (bn): BatchNorm2d(0.002 GMac, 0.008% MACs, 128, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+      )
+      (7): non_bottleneck_1d(
+        1.619 GMac, 6.093% MACs, 
+        (conv3x1_1): Conv2d(0.404 GMac, 1.519% MACs, 128, 128, kernel_size=(3, 1), stride=(1, 1), padding=(1, 0))
+        (conv1x3_1): Conv2d(0.404 GMac, 1.519% MACs, 128, 128, kernel_size=(1, 3), stride=(1, 1), padding=(0, 1))
+        (bn1): BatchNorm2d(0.002 GMac, 0.008% MACs, 128, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3x1_2): Conv2d(0.404 GMac, 1.519% MACs, 128, 128, kernel_size=(3, 1), stride=(1, 1), padding=(2, 0), dilation=(2, 1))
+        (conv1x3_2): Conv2d(0.404 GMac, 1.519% MACs, 128, 128, kernel_size=(1, 3), stride=(1, 1), padding=(0, 2), dilation=(1, 2))
+        (bn2): BatchNorm2d(0.002 GMac, 0.008% MACs, 128, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        (dropout): Dropout2d(0.0 GMac, 0.000% MACs, p=0.3)
+      )
+      (8): non_bottleneck_1d(
+        1.619 GMac, 6.093% MACs, 
+        (conv3x1_1): Conv2d(0.404 GMac, 1.519% MACs, 128, 128, kernel_size=(3, 1), stride=(1, 1), padding=(1, 0))
+        (conv1x3_1): Conv2d(0.404 GMac, 1.519% MACs, 128, 128, kernel_size=(1, 3), stride=(1, 1), padding=(0, 1))
+        (bn1): BatchNorm2d(0.002 GMac, 0.008% MACs, 128, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3x1_2): Conv2d(0.404 GMac, 1.519% MACs, 128, 128, kernel_size=(3, 1), stride=(1, 1), padding=(4, 0), dilation=(4, 1))
+        (conv1x3_2): Conv2d(0.404 GMac, 1.519% MACs, 128, 128, kernel_size=(1, 3), stride=(1, 1), padding=(0, 4), dilation=(1, 4))
+        (bn2): BatchNorm2d(0.002 GMac, 0.008% MACs, 128, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        (dropout): Dropout2d(0.0 GMac, 0.000% MACs, p=0.3)
+      )
+      (9): non_bottleneck_1d(
+        1.619 GMac, 6.093% MACs, 
+        (conv3x1_1): Conv2d(0.404 GMac, 1.519% MACs, 128, 128, kernel_size=(3, 1), stride=(1, 1), padding=(1, 0))
+        (conv1x3_1): Conv2d(0.404 GMac, 1.519% MACs, 128, 128, kernel_size=(1, 3), stride=(1, 1), padding=(0, 1))
+        (bn1): BatchNorm2d(0.002 GMac, 0.008% MACs, 128, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3x1_2): Conv2d(0.404 GMac, 1.519% MACs, 128, 128, kernel_size=(3, 1), stride=(1, 1), padding=(8, 0), dilation=(8, 1))
+        (conv1x3_2): Conv2d(0.404 GMac, 1.519% MACs, 128, 128, kernel_size=(1, 3), stride=(1, 1), padding=(0, 8), dilation=(1, 8))
+        (bn2): BatchNorm2d(0.002 GMac, 0.008% MACs, 128, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        (dropout): Dropout2d(0.0 GMac, 0.000% MACs, p=0.3)
+      )
+      (10): non_bottleneck_1d(
+        1.619 GMac, 6.093% MACs, 
+        (conv3x1_1): Conv2d(0.404 GMac, 1.519% MACs, 128, 128, kernel_size=(3, 1), stride=(1, 1), padding=(1, 0))
+        (conv1x3_1): Conv2d(0.404 GMac, 1.519% MACs, 128, 128, kernel_size=(1, 3), stride=(1, 1), padding=(0, 1))
+        (bn1): BatchNorm2d(0.002 GMac, 0.008% MACs, 128, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3x1_2): Conv2d(0.404 GMac, 1.519% MACs, 128, 128, kernel_size=(3, 1), stride=(1, 1), padding=(16, 0), dilation=(16, 1))
+        (conv1x3_2): Conv2d(0.404 GMac, 1.519% MACs, 128, 128, kernel_size=(1, 3), stride=(1, 1), padding=(0, 16), dilation=(1, 16))
+        (bn2): BatchNorm2d(0.002 GMac, 0.008% MACs, 128, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        (dropout): Dropout2d(0.0 GMac, 0.000% MACs, p=0.3)
+      )
+      (11): non_bottleneck_1d(
+        1.619 GMac, 6.093% MACs, 
+        (conv3x1_1): Conv2d(0.404 GMac, 1.519% MACs, 128, 128, kernel_size=(3, 1), stride=(1, 1), padding=(1, 0))
+        (conv1x3_1): Conv2d(0.404 GMac, 1.519% MACs, 128, 128, kernel_size=(1, 3), stride=(1, 1), padding=(0, 1))
+        (bn1): BatchNorm2d(0.002 GMac, 0.008% MACs, 128, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3x1_2): Conv2d(0.404 GMac, 1.519% MACs, 128, 128, kernel_size=(3, 1), stride=(1, 1), padding=(2, 0), dilation=(2, 1))
+        (conv1x3_2): Conv2d(0.404 GMac, 1.519% MACs, 128, 128, kernel_size=(1, 3), stride=(1, 1), padding=(0, 2), dilation=(1, 2))
+        (bn2): BatchNorm2d(0.002 GMac, 0.008% MACs, 128, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        (dropout): Dropout2d(0.0 GMac, 0.000% MACs, p=0.3)
+      )
+      (12): non_bottleneck_1d(
+        1.619 GMac, 6.093% MACs, 
+        (conv3x1_1): Conv2d(0.404 GMac, 1.519% MACs, 128, 128, kernel_size=(3, 1), stride=(1, 1), padding=(1, 0))
+        (conv1x3_1): Conv2d(0.404 GMac, 1.519% MACs, 128, 128, kernel_size=(1, 3), stride=(1, 1), padding=(0, 1))
+        (bn1): BatchNorm2d(0.002 GMac, 0.008% MACs, 128, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3x1_2): Conv2d(0.404 GMac, 1.519% MACs, 128, 128, kernel_size=(3, 1), stride=(1, 1), padding=(4, 0), dilation=(4, 1))
+        (conv1x3_2): Conv2d(0.404 GMac, 1.519% MACs, 128, 128, kernel_size=(1, 3), stride=(1, 1), padding=(0, 4), dilation=(1, 4))
+        (bn2): BatchNorm2d(0.002 GMac, 0.008% MACs, 128, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        (dropout): Dropout2d(0.0 GMac, 0.000% MACs, p=0.3)
+      )
+      (13): non_bottleneck_1d(
+        1.619 GMac, 6.093% MACs, 
+        (conv3x1_1): Conv2d(0.404 GMac, 1.519% MACs, 128, 128, kernel_size=(3, 1), stride=(1, 1), padding=(1, 0))
+        (conv1x3_1): Conv2d(0.404 GMac, 1.519% MACs, 128, 128, kernel_size=(1, 3), stride=(1, 1), padding=(0, 1))
+        (bn1): BatchNorm2d(0.002 GMac, 0.008% MACs, 128, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3x1_2): Conv2d(0.404 GMac, 1.519% MACs, 128, 128, kernel_size=(3, 1), stride=(1, 1), padding=(8, 0), dilation=(8, 1))
+        (conv1x3_2): Conv2d(0.404 GMac, 1.519% MACs, 128, 128, kernel_size=(1, 3), stride=(1, 1), padding=(0, 8), dilation=(1, 8))
+        (bn2): BatchNorm2d(0.002 GMac, 0.008% MACs, 128, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        (dropout): Dropout2d(0.0 GMac, 0.000% MACs, p=0.3)
+      )
+      (14): non_bottleneck_1d(
+        1.619 GMac, 6.093% MACs, 
+        (conv3x1_1): Conv2d(0.404 GMac, 1.519% MACs, 128, 128, kernel_size=(3, 1), stride=(1, 1), padding=(1, 0))
+        (conv1x3_1): Conv2d(0.404 GMac, 1.519% MACs, 128, 128, kernel_size=(1, 3), stride=(1, 1), padding=(0, 1))
+        (bn1): BatchNorm2d(0.002 GMac, 0.008% MACs, 128, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3x1_2): Conv2d(0.404 GMac, 1.519% MACs, 128, 128, kernel_size=(3, 1), stride=(1, 1), padding=(16, 0), dilation=(16, 1))
+        (conv1x3_2): Conv2d(0.404 GMac, 1.519% MACs, 128, 128, kernel_size=(1, 3), stride=(1, 1), padding=(0, 16), dilation=(1, 16))
+        (bn2): BatchNorm2d(0.002 GMac, 0.008% MACs, 128, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+        (dropout): Dropout2d(0.0 GMac, 0.000% MACs, p=0.3)
+      )
+    )
+    (output_conv): Conv2d(0.0 GMac, 0.000% MACs, 128, 19, kernel_size=(1, 1), stride=(1, 1))
+  )
+  (decoder): Decoder(
+    4.886 GMac, 18.389% MACs, 
+    (F_glo): FGlo(
+      0.001 GMac, 0.004% MACs, 
+      (avg_pool): AdaptiveAvgPool2d(0.001 GMac, 0.004% MACs, output_size=1)
+      (fc): Sequential(
+        0.0 GMac, 0.000% MACs, 
+        (0): Linear(0.0 GMac, 0.000% MACs, in_features=128, out_features=8, bias=True)
+        (1): ReLU(0.0 GMac, 0.000% MACs, inplace)
+        (2): Linear(0.0 GMac, 0.000% MACs, in_features=8, out_features=128, bias=True)
+        (3): Sigmoid(0.0 GMac, 0.000% MACs, )
+      )
+    )
+    (layer5a): PSPDec(
+      0.002 GMac, 0.006% MACs, 
+      (F_glo): FGlo(
+        0.0 GMac, 0.001% MACs, 
+        (avg_pool): AdaptiveAvgPool2d(0.0 GMac, 0.001% MACs, output_size=1)
+        (fc): Sequential(
+          0.0 GMac, 0.000% MACs, 
+          (0): Linear(0.0 GMac, 0.000% MACs, in_features=32, out_features=2, bias=True)
+          (1): ReLU(0.0 GMac, 0.000% MACs, inplace)
+          (2): Linear(0.0 GMac, 0.000% MACs, in_features=2, out_features=32, bias=True)
+          (3): Sigmoid(0.0 GMac, 0.000% MACs, )
+        )
+      )
+      (features): Sequential(
+        0.001 GMac, 0.005% MACs, 
+        (0): AvgPool2d(0.001 GMac, 0.004% MACs, kernel_size=(64, 128), stride=(64, 128), padding=0)
+        (1): Conv2d(0.0 GMac, 0.000% MACs, 128, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (2): BatchNorm2d(0.0 GMac, 0.000% MACs, 32, eps=1e-05, momentum=0.95, affine=True, track_running_stats=True)
+        (3): ReLU(0.0 GMac, 0.000% MACs, inplace)
+        (4): Upsample(0.0 GMac, 0.001% MACs, size=(64, 128), mode=bilinear)
+      )
+    )
+    (layer5b): PSPDec(
+      0.002 GMac, 0.006% MACs, 
+      (F_glo): FGlo(
+        0.0 GMac, 0.001% MACs, 
+        (avg_pool): AdaptiveAvgPool2d(0.0 GMac, 0.001% MACs, output_size=1)
+        (fc): Sequential(
+          0.0 GMac, 0.000% MACs, 
+          (0): Linear(0.0 GMac, 0.000% MACs, in_features=32, out_features=2, bias=True)
+          (1): ReLU(0.0 GMac, 0.000% MACs, inplace)
+          (2): Linear(0.0 GMac, 0.000% MACs, in_features=2, out_features=32, bias=True)
+          (3): Sigmoid(0.0 GMac, 0.000% MACs, )
+        )
+      )
+      (features): Sequential(
+        0.001 GMac, 0.005% MACs, 
+        (0): AvgPool2d(0.001 GMac, 0.004% MACs, kernel_size=(32, 64), stride=(32, 64), padding=0)
+        (1): Conv2d(0.0 GMac, 0.000% MACs, 128, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (2): BatchNorm2d(0.0 GMac, 0.000% MACs, 32, eps=1e-05, momentum=0.95, affine=True, track_running_stats=True)
+        (3): ReLU(0.0 GMac, 0.000% MACs, inplace)
+        (4): Upsample(0.0 GMac, 0.001% MACs, size=(64, 128), mode=bilinear)
+      )
+    )
+    (layer5c): PSPDec(
+      0.002 GMac, 0.006% MACs, 
+      (F_glo): FGlo(
+        0.0 GMac, 0.001% MACs, 
+        (avg_pool): AdaptiveAvgPool2d(0.0 GMac, 0.001% MACs, output_size=1)
+        (fc): Sequential(
+          0.0 GMac, 0.000% MACs, 
+          (0): Linear(0.0 GMac, 0.000% MACs, in_features=32, out_features=2, bias=True)
+          (1): ReLU(0.0 GMac, 0.000% MACs, inplace)
+          (2): Linear(0.0 GMac, 0.000% MACs, in_features=2, out_features=32, bias=True)
+          (3): Sigmoid(0.0 GMac, 0.000% MACs, )
+        )
+      )
+      (features): Sequential(
+        0.001 GMac, 0.005% MACs, 
+        (0): AvgPool2d(0.001 GMac, 0.004% MACs, kernel_size=(16, 32), stride=(16, 32), padding=0)
+        (1): Conv2d(0.0 GMac, 0.000% MACs, 128, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (2): BatchNorm2d(0.0 GMac, 0.000% MACs, 32, eps=1e-05, momentum=0.95, affine=True, track_running_stats=True)
+        (3): ReLU(0.0 GMac, 0.000% MACs, inplace)
+        (4): Upsample(0.0 GMac, 0.001% MACs, size=(64, 128), mode=bilinear)
+      )
+    )
+    (layer5d): PSPDec(
+      0.002 GMac, 0.007% MACs, 
+      (F_glo): FGlo(
+        0.0 GMac, 0.001% MACs, 
+        (avg_pool): AdaptiveAvgPool2d(0.0 GMac, 0.001% MACs, output_size=1)
+        (fc): Sequential(
+          0.0 GMac, 0.000% MACs, 
+          (0): Linear(0.0 GMac, 0.000% MACs, in_features=32, out_features=2, bias=True)
+          (1): ReLU(0.0 GMac, 0.000% MACs, inplace)
+          (2): Linear(0.0 GMac, 0.000% MACs, in_features=2, out_features=32, bias=True)
+          (3): Sigmoid(0.0 GMac, 0.000% MACs, )
+        )
+      )
+      (features): Sequential(
+        0.002 GMac, 0.006% MACs, 
+        (0): AvgPool2d(0.001 GMac, 0.004% MACs, kernel_size=(8, 16), stride=(8, 16), padding=0)
+        (1): Conv2d(0.0 GMac, 0.001% MACs, 128, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (2): BatchNorm2d(0.0 GMac, 0.000% MACs, 32, eps=1e-05, momentum=0.95, affine=True, track_running_stats=True)
+        (3): ReLU(0.0 GMac, 0.000% MACs, inplace)
+        (4): Upsample(0.0 GMac, 0.001% MACs, size=(64, 128), mode=bilinear)
+      )
+    )
+    (final): Sequential(
+      4.878 GMac, 18.360% MACs, 
+      (0): Conv2d(4.832 GMac, 18.186% MACs, 256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (1): BatchNorm2d(0.004 GMac, 0.016% MACs, 256, eps=1e-05, momentum=0.95, affine=True, track_running_stats=True)
+      (2): ReLU(0.002 GMac, 0.008% MACs, inplace)
+      (3): Dropout(0.0 GMac, 0.000% MACs, p=0.1)
+      (4): Conv2d(0.04 GMac, 0.151% MACs, 256, 19, kernel_size=(1, 1), stride=(1, 1))
+    )
+  )
+)/home/a104/anaconda3/envs/py37/lib/python3.7/site-packages/torch/nn/functional.py:2539: UserWarning: Default upsampling behavior when mode=bilinear is changed to align_corners=False since 0.4.0. Please specify align_corners=True if the old behavior is desired. See the documentation of nn.Upsample for details.
+  "See the documentation of nn.Upsample for details.".format(mode))
+/home/a104/anaconda3/envs/py37/lib/python3.7/site-packages/torch/nn/functional.py:2457: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+
+Flops: 26.57 GMac
+Params: 2.49 M
